@@ -6,7 +6,7 @@ Veteriner Uygulaması
   
 # Özet
 
-Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutulmasını sağlar..
+Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutulmasını sağlar.
 
 # Gereksinimler
 
