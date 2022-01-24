@@ -51,7 +51,7 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
 
 • Thymeleaf for frontend
 
-# Önkoşullar
+# Ön Koşullar
 
 • Maven
 
