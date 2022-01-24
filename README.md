@@ -1,37 +1,41 @@
-Account API For Existing Customer
 
-# Spring Boot Application
+# Spring Boot and Thymeleaf Application
 
-This project provides to create account for existing customers.
+Veteriner Uygulaması
+
   
-# Summary
+# Özet
 
-The assessment consists of an API to be used for opening a new “current account” of already existing customers.
+Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutulmasını sağlar..
 
-# Requirements
+# Gereksinimler
 
-• The API will expose an endpoint which accepts the user information (customerID, initialCredit).
+• Hayvan sahibinin kaydı için gerekli endpointler (name, surname, address, phone number, email)
 
-• Once the endpoint is called, a new account will be opened connected to the user whose ID is customerID.
+• İstenilen hayvan sahibine, evcil hayvan kaydı yapmak için gerekli endpointler (name, type, species ,age , explanation, pet owner id)
 
-• Also, if initialCredit is not 0, a transaction will be sent to the new account.
-
-• Another Endpoint will output the user information showing Name, Surname, balance, and transactions of the accounts.
+• Girilen endpointlerden phone number 11 haneli olmalı, email gerekli validation kurallarına göre yazılmalı, age 0'dan küçük olmamalıdır.
 
 
-
-
-   The application has 2 apis
+   Uygulama 2 API içerir
   
-• AccountAPI
+• PetOwnerAPI
 
-• CustomerAPI
+• PetAPI
 
-  POST /v1/account - creates a new account for existing customer
+  GET /v1/petOwner/getAll - Tüm hayvan sahiplerini getirir.
+  
+  GET /v1/pet/findPetByPetOwnerId(petOwnerId={petOwner.id}) - Evcil hayvanları,hayvan sahibi id sine göre getirir.
+  
+  GET /v1/petOwner/createPetOwnerForm - Hayvan sahiplerinin kayıt formunu getirir.
+  
+  GET /v1/pet/createPetForm - Evcil hayvan kayıt formunu getirir.
 
-  GET /v1/customer/{customerId} - retrieves a customer
+  POST /v1/petOwner/createPetOwner - Hayvan sahiplerini sisteme kaydeder.
+  
+  POST /v1/pet/createPet - Evcil hayvanları sisteme kaydeder.
 
-# Tech Stack
+# Teknolojiler
 
 • Java 11
 
@@ -45,8 +49,23 @@ The assessment consists of an API to be used for opening a new “current accoun
 
 • Docker
 
-# Prerequisites
+• Thymeleaf for frontend
+
+# Önkoşullar
 
 • Maven
 
 • Docker
+
+# Çalıştırma
+
+  Docker
+  
+  Sadece docker run -t vet-0.1.jar komutunu çalıştırmanız yeterlidir.
+  
+  *$Port: 8087*
+  ```ssh
+  $ cd /vet
+  $ docker run -t vet-0.1.jar
+  ```
+  
