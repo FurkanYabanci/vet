@@ -61,11 +61,15 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
 
   Docker
   
-  Sadece docker run -t vet-0.1.jar komutunu çalıştırmanız yeterlidir.
+  DockerHub sitesinden yabancifurkan/images'i aratınız.
+  
+  Dockerınızda 'docker pull yabancifurkan/images:vet-0.1.jar' komutu ile pull ediniz,
+  
+  docker run -t vet-0.1.jar komutu ile çalıştırınız.
   
   *$Port: 8087*
   ```ssh
-  $ cd /vet
+  $ docker pull yabancifurkan/images:vet-0.1.jar
   $ docker run -t vet-0.1.jar
   ```
   
