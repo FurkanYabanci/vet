@@ -70,6 +70,9 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
   *$Port: 8087*
   ```ssh
   $ docker pull yabancifurkan/images:vet-0.1.jar
+   ```
+   
+  ```ssh
   $ docker run -t vet-0.1.jar
   ```
   
