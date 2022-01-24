@@ -17,7 +17,7 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
 • Girilen endpointlerden phone number 11 haneli olmalı, email gerekli validation kurallarına göre yazılmalı, age 0'dan küçük olmamalıdır.
 
 
-   Uygulama 2 API içerir
+   Uygulama 2 API içerir.
   
 • PetOwnerAPI
 
