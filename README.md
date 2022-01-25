@@ -15,7 +15,7 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
 • İstenilen hayvan sahibine, evcil hayvan kaydı yapmak için gerekli endpointler (name, type, species ,age , explanation, pet owner id)
 
 • Girilen endpointlerden phone number 11 haneli olmalı, email gerekli validation kurallarına göre yazılmalı, age 0'dan küçük olmamalıdır.
-
+___
 
    Uygulama 2 API içerir.
   
@@ -66,7 +66,7 @@ Bu proje evcil hayvan ve hayvan sahiplerinin sisteme kaydedilerek,sistemde tutul
   Dockerınızda 'docker pull yabancifurkan/images:vet-0.1.jar' komutu ile pull ediniz,
   
   docker run -t vet-0.1.jar komutu ile çalıştırınız.
-  
+  ___
   *$Port: 8087*
   ```ssh
   $ docker pull yabancifurkan/images:vet-0.1.jar
